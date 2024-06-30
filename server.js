@@ -25,6 +25,7 @@ app.get('/health', (req, res) => {
 
 // Other security-related middleware can be added here
 // Your routes and other middleware can be added here
+require('./routes')(app);
 
 // Start the server
 const port = process.env.PORT || 3000;
